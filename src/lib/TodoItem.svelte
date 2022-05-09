@@ -5,7 +5,7 @@
   </form>
 
   <form action="" method="" class="text">
-    <input type="text" />
+    <input type="text" value={ todo.text } />
     <button class="save" aria-label="Save todo"></button>
   </form>
 
@@ -13,6 +13,11 @@
     <button class="delete" aria-label="Delete todo"></button>
   </form>
 </div>
+
+
+<script lang="ts">
+  export let todo: App.Todo;
+</script>
 
 
 <style>
